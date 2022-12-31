@@ -5,8 +5,178 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
+    <header class="flux-calculation using-dl" id="introduction">
+		<h1>Flux calculation from PMT using Deep Learning</h1>
+		<p>From laboratory experiment to stellar flux calculation</p>
+        <figure class="quote">
+            <blockquote>
+                A computer would deserve to be called intelligent if it could deceive
+a human into believing that it was human.
+            </blockquote>
+            <figcaption>
+              &mdash; Alan Turing, <cite></cite>  </figcaption>
+          </figure>
+    </header>
     
+    
+    <!--<hr>
+    <hr>-->
+
+    <nav class="navigate-to other page">
+        <a href="#introduction" aria-label="Go to the top of the page">Introduction</a>
+        <a href="#history" aria-label="Go to the history section">History</a>
+        <a href="#experiments">Experiments</a>
+        <a href="#instument-and-process">Instrument and procedure</a>
+        <a href="#experiments">Experiments</a>
+        <a href="page_two.html">Deep Learning</a>
+
+    </nav>
+
+    
+    <section class="dl_corr" id="dl_corr">
+        <h1>Deep Learning for correlation</h1>
+        <h2>Motivation</h2>
+        <div class="motivation2">
+            <p class="motivation2" id="motivation2">Intensity interferometry is part of optical interferometry, which provides a sub-milliarcsecond resolution of astronomical objects. 
+                In intensity interferometry one correlates intensities of optical fluxes rather than amplitudes of waves.
+               For a successful measurement one needs a large light collecting
+               area for several telescopes separated
+               by hundreds of meters and good time resolution of the intensity flux.
+               Air Cherenkov telescopes, e.g., H.E.S.S. are a natural candidate for performing such a measurement.
+               One of the important tasks is to determine the rate of photons hitting the PMTs to calculate expectations on the signal-to-noise ratio.
+               For low rates, the individual pulses can be resolved and counted,
+               but for high rates, relevant for the IACTs, the pulses from the photons overlap.
+               We use different neural network algorithms in order to determine the rate
+               of photons hitting the PMT, including the high rates.
+            </p>
+
+            <p class="history" id="history">
+                Machine learning methods can provide predictive models to solve complex problems either
+with simulated or measured data, using classification or regression approach. In the last
+decade, DL has been extensively used to solve various problems such as Natural Language
+processing [Su14], speech recognition [Hi12] and Computer Vision [He16; LBH15; Su12].
+Especially, Computer Vision methods have been used thoroughly in physics [Ch20; PP18].
+In this work, we focused on various types of DL models such as Convolutional Neural
+Network (CNN), Long-Short Term Memory Unit (LSTM) and Gated Recurrent Unit (GRU)
+in order to determine the photon rates detected by PMTs. We compared the results with more traditional methods of estimating the photon rate: peak-finding method from scipy6
+library and charge integration [21; Zm21]. The peak finding method provides good results
+at low rates and underestimates the number of photons at high rates, when many peaks are
+overlapping.
+            </p>
+        </div>
+
+
+        <article class="forecast">
+            <h1>different types of neural networks</h1>
+            <article class="day-forecast">
+                <h2>Fully connected Artificial Neural Network</h2>
+                <p>Rain.</p>
+            </article>
+            <article class="day-forecast">
+                <h2>Convolutional Neural Network</h2>
+                <p>Periods of rain.</p>
+            </article>
+            <article class="day-forecast">
+                <h2>Recurrent Neural Network</h2>
+                <p>Heavy rain.</p>
+            </article>
+        </article>
+
+
+    </section>
+
+
+    <section class="diff_exp types" id="diff_exp">
+        <h1>Different experiments</h1>
+        <div class="experiments" id="experiments">
+            <ul>
+                <li>Imaging Air Cherenkov telescopes
+                    <ol>
+                        <li>High Energy Stereoscopic System</li>
+                        <li>Cherenkov Telescope Array(CTA)
+                            <ul>
+                                <li>CTA-north</li>
+                                <li>CTA-south</li>
+                            </ul>
+                        </li>
+                        <li>MAGIC(Major Atmospheric Gamma Imaging Cherenkov Telescopes)</li>
+                        <li>VERITAS (Very Energetic Radiation Imaging Telescope Array System)</li>
+                    </ol>
+                </li>
+                <li>SKA (Square Kilometer Array)</li>
+                <li>VLT (Very Large Telescope)</li>
+            </ul>
+        </div>
+        <a href="https://insidetheperimeter.ca/wp-content/uploads/2020/11/The_NOEMA_observatory_operated_by_IRAM-2000x900.jpg" class="veritas_link" id="veritas_link"> Source</a>
+    </section>
+
+    <section class="instument-and procedure" id="instument-and-process">
+        <div class="intst" id="inst">
+            <h3>Instruments</h3>
+            <ul>
+                <li>two telescopes</li>
+                <li>optical filters</li>
+                <li>LED</li>
+                <li>beam splitter</li>
+                <li>two pmts</li>
+                <li>amplifiers</li>
+                <li>internet</li>
+                <li>optical guide</li>
+                <li>telescope mounts</li>
+                <li>computer</li>
+                <li>python</li>
+            </ul>
+        </div>
+
+        <div class="proce" id="proce">
+            <h3>Procedure</h3>
+            <ol>
+                <li>Laboratory experiment
+                    <ul>
+                        <li>Attach gray filter at PMTs</li>
+                        <li>Mount beam splitter</li>
+                        <li> Adjust PMTs at right angles</li>
+                        <li> Use LED as point source</li>
+                    </ul>
+                </li>
+                <li>Roof-top experiment
+                    <ul>
+                        <li>Establish telescopes on mounts and keep around 2m distance</li>
+                        <li>Attach pmts and calibrate telescopes</li>
+                        <li>Direct telescope towards desired star</li>
+                    </ul>
+                </li>
+                <li>Turn on the devices carefully and perform calibration</li>
+                <li>Using python plot flux from LED/star at nm scale</li>
+            </ol>
+
+        </div>
+    </section>
+
+    <section>
+        <iframe id="map" src="https://www.youtube.com/embed/7R2Ehcvdxmg&t=1564s&ab_channel=InstitutdesHautes%C3%89tudesScientifiques%28IH%C3%89S%29" width="100%" height="900"></iframe>
+    </section>
+
+    <footer class="footer1">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Find us on Facebook (link opens in a new tab)">Facebook</a>
+		<a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Find us on Instagram (link opens in a new tab)">Instagram</a>
+		<a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Find us on Twitter (link opens in a new tab)">Twitter</a>
+        <p>Copyright © Intensity Interferometry 2023</p>
+    </footer>
+
+
+
+
+
+    
+    
+    
+    
+
+
 </body>
 </html>

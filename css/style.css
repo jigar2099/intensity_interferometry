@@ -9,16 +9,255 @@ body {
 h1,h2,h3 {
 	font-family: 'Merienda One', 'Brush Script MT', cursive;
 }
-
-header > p {font-family: 'Brush Script MT', cursive;}
-
-#diff_exp {
-	padding-bottom: 5rem;
-	margin-bottom: 80px;
-	background-image: url('https://www.cta-observatory.org/wp-content/uploads/2020/08/CTA_telescopes_scales_2020_DAY_8K_02.jpg');
-  background-size: cover;
-  background-repeat:no-repeat;
-  background-position:center;
+p {
+	font-size: 19px; font-weight: bold; font-style: italic; font-family: 'Brush Script MT', cursive;
+	margin-top: 1em ;
+  	margin-bottom: 1em ;
+}
+blockquote, figcaption {
+	color: black;
+	font-size: 19px; font-weight: bold; font-style: italic; font-family: 'Brush Script MT'
 }
 
-li {font-size: 20px;}
+
+
+
+
+
+/* HEADER */
+.flux-calculation {
+	height: 25vh;
+	background: center 80% / cover no-repeat;
+	/*line-height: 90px;*/
+}
+.using-dl{
+	text-align : center;
+	vertical-align: middle;
+	color: antiquewhite;
+}
+#introduction {
+	background: url('https://istardb.org/wp-content/uploads/2020/04/aerbanner2a.jpg') fixed;
+}
+.quote {
+	background-color:aquamarine;
+	opacity: 0.65;
+	color:aquamarine;
+	width: 750px;
+    height: 90px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* NAVIGATION */
+nav > a {
+	text-decoration: none;
+	color:aqua;
+	margin: 0.5rem;
+}
+nav > a:hover {
+	color: chartreuse;
+	font-size: 1.2rem;
+	
+}
+.navigate-to {
+	background-color: black;
+}
+.other {
+	text-align: center;
+}
+.page {
+	text-transform: uppercase;
+}
+
+
+
+
+
+/* MOTIVATION AND HISTORY */
+#intensity_int {
+	padding: 1rem 2.2rem;
+	margin-bottom: 1px;
+	background: url('https://wallpapercave.com/wp/wp4222694.jpg') center center / cover no-repeat fixed;
+	background-size: cover;
+	/*width: 300px;
+	height: 300px;*/
+  	background-position:center;
+	background-repeat: no-repeat;
+	color:silver;
+	text-shadow: 1px 0 rgb(75, 68, 68), 0 1px rgb(78, 74, 74), 1px 0 rgb(78, 71, 71), 0 -1px rgb(69, 77, 80);
+}
+
+
+
+
+
+
+/* EXPERIMENTS */
+#diff_exp {
+	padding: 1rem 1rem;
+	margin-bottom: 0px;
+	background: url('https://insidetheperimeter.ca/wp-content/uploads/2020/11/The_NOEMA_observatory_operated_by_IRAM-2000x900.jpg') fixed;
+	background-size: cover;
+	/*width: 300px;
+	height: 300px;*/
+  	background-position:center;
+	background-repeat: no-repeat;
+	text-shadow: 2px 0 rgb(141, 132, 132), 0 2px rgb(126, 118, 118), 3px 0 rgb(97, 138, 138), 0 3px rgb(97, 138, 138);
+	font-size: 23px; color:rgb(26, 24, 24);  font-style: italic; font-family: 'Merienda One', 'Brush Script MT', cursive;
+}
+.veritas_link {color:rgb(26, 196, 196);}
+.types {
+	padding: 10px 15px 25px 25px;
+	border-radius: 8px;
+	width: 97.5%;
+	margin: 0.3%;
+}
+
+
+
+
+
+/* INSTRUMENT AND PROCEDURE */
+.instument-and {
+	border-radius: 1px;
+	width: 99.5%;
+	/*margin: 0.3%;*/
+	/*border-radius: 8px;*/
+	background: url('/css/iceact_setup.jpeg') fixed;
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-shadow: 1px 0 rgb(8, 8, 8), 0 1px rgb(10, 10, 10), 1px 0 rgb(12, 12, 12), 0 1px rgb(13, 14, 14);
+	font-size: 23px; color:rgb(14, 13, 13);  font-style: italic; font-family: 'Merienda One', 'Brush Script MT', cursive;
+}
+#inst {
+	background-color:aqua;
+	opacity: 0.65;
+	width: 22%;
+	margin: 1rem 0;
+}
+#proce {
+	background-color: aquamarine;
+	opacity: 0.65;
+	width: 37%;
+	margin: 1rem 0;
+}
+
+
+
+
+/* FOOTER */
+footer {
+	text-decoration: none;
+	background-color: #6b6a69;
+	padding: 1em;
+	text-align: center;
+	font-size: 1.2rem;
+	
+}
+footer > span {
+	color: silver;
+}
+footer > a:hover {
+	color: beige;
+	text-decoration: none;
+	padding: 0 15px;
+	font-size: 1.5rem;
+}
+footer > p {
+	color: silver;
+}
+footer > a {
+	text-decoration: none;
+}
+
+
+/*-------------------------------------------------------------*/
+/*#############################################################*/
+/*-------------------------------------------------------------*/
+/*#############################################################*/
+/*---------------------PAGE TWO--------------------------------*/
+/*#############################################################*/
+/*-------------------------------------------------------------*/
+/*#############################################################*/
+/*-------------------------------------------------------------*/
+
+/* HEADER */
+.flux-calculation {
+	height: 25vh;
+	background: center 80% / cover no-repeat;
+	/*line-height: 90px;*/
+}
+.using-dl{
+	text-align : center;
+	vertical-align: middle;
+	color: antiquewhite;
+}
+#introduction {
+	background: url('https://www.cpacanada.ca/-/media/site/connecting-and-news/images/event-newsletter/pdevents-2019-issue85-newsletter-800x514.jpg?h=514&la=en&w=800&hash=503B89BE4A01B69C549BC4A8778666D36BC841DF') fixed;
+}
+.quote {
+	background-color:aquamarine;
+	opacity: 0.65;
+	color:aquamarine;
+	width: 750px;
+    height: 90px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* NAVIGATION */
+nav > a {
+	text-decoration: none;
+	color:aqua;
+	margin: 0.5rem;
+}
+nav > a:hover {
+	color: chartreuse;
+	font-size: 1.2rem;
+	
+}
+.navigate-to {
+	background-color: black;
+}
+.other {
+	text-align: center;
+}
+.page {
+	text-transform: uppercase;
+}
+
+/* MOTIVATION AND HISTORY */
+#dl_corr {
+	padding: 1rem 2.2rem;
+	margin-bottom: 1px;
+	background: url('https://developer-blogs.nvidia.com/wp-content/uploads/2022/07/convai-blog-image-1600x900-1.png') center center / cover no-repeat fixed;
+	background-size: cover;
+	/*width: 300px;
+	height: 300px;*/
+  	background-position:center;
+	background-repeat: no-repeat;
+	color:silver;
+	text-shadow: 1px 0 rgb(75, 68, 68), 0 1px rgb(78, 74, 74), 1px 0 rgb(78, 71, 71), 0 -1px rgb(69, 77, 80);
+}
+
+.forecast {
+    margin: 0;
+    padding: 0.3rem;
+    background-color: #eee;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+.forecast > h1,
+.day-forecast {
+    margin: 0.5rem;
+    padding: 0.3rem;
+    font-size: 1.2rem;
+}
+
+.day-forecast {
+    background: right/contain content-box border-box no-repeat url('/media/examples/rain.svg') rgb(97, 95, 95);
+}
+/*https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article*/

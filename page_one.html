@@ -9,26 +9,39 @@
 </head>
 
 <body>
-    <header class="flux-calculation using-dl" id="introduction">
+    <header class="deep-learning" id="intro-dl">
 		<h1>Flux calculation from PMT using Deep Learning</h1>
 		<p>From laboratory experiment to stellar flux calculation</p>
+        <figure class="quote">
+            <blockquote>
+                It suddenly struck me that that tiny pea, pretty and blue, was the
+                Earth. I put up my thumb and shut one eye, and my thumb blotted
+                out the planet Earth.
+            </blockquote>
+            <figcaption>
+              &mdash; Neil Armstrong, <cite></cite>  </figcaption>
+          </figure>
     </header>
     
     
-    <hr>
-    <hr>
+    <!--<hr>
+    <hr>-->
 
-    <nav class="navigate-to-other-page">
+    <nav class="navigate-to other page">
         <a href="#introduction" aria-label="Go to the top of the page">Introduction</a>
         <a href="#history" aria-label="Go to the history section">History</a>
         <a href="#experiments">Experiments</a>
+        <a href="#instument-and-process">Instrument and procedure</a>
+        <a href="#experiments">Experiments</a>
+        <a href="page_two.html">Deep Learning</a>
 
     </nav>
 
+    
     <section class="intensity_int" id="intensity_int">
         <h1>Intensity Interferometry</h1>
+        <h2>Motivation</h2>
         <div class="motivation1">
-            <h2>Motivation</h2>
             <p class="motivation" id="motivation">Our understanding of stars comes from high angular resolution results from star’s light
                 spectrum and variability, for which several attempts are done utilizing many advanced
                 optical instruments including extremely large telescopes. The highest resolution so far is
@@ -37,10 +50,8 @@
                 wavelengths. However, they are constrained by atmospheric turbulance. Intensity interferometry, an alternative approach to amplitude interferometry, is a method to achive higher
                 angular resolution without results being affected by atmospheric turbulence
             </p>
-        </div>
 
-        <div>
-            <h2>Brief history and early development</h2>
+            <h2 >Brief history and early development</h2>
             <p class="history" id="history">
                 Measuring the angular diameter of is 400 years old problem. Galileo measured distance
         to the Vega and placed an upper limit on its angular size, by mentioning in his report
@@ -83,7 +94,8 @@
         </div>
     </section>
 
-    <section class="diff_exp" id="diff_exp">
+
+    <section class="diff_exp types" id="diff_exp">
         <h1>Different experiments</h1>
         <div class="experiments" id="experiments">
             <ul>
@@ -104,10 +116,62 @@
                 <li>VLT (Very Large Telescope)</li>
             </ul>
         </div>
-        <p> Source </p>
+        <a href="https://insidetheperimeter.ca/wp-content/uploads/2020/11/The_NOEMA_observatory_operated_by_IRAM-2000x900.jpg" class="veritas_link" id="veritas_link"> Source</a>
     </section>
 
+    <section class="instument-and procedure" id="instument-and-process">
+        <div class="intst" id="inst">
+            <h3>Instruments</h3>
+            <ul>
+                <li>two telescopes</li>
+                <li>optical filters</li>
+                <li>LED</li>
+                <li>beam splitter</li>
+                <li>two pmts</li>
+                <li>amplifiers</li>
+                <li>internet</li>
+                <li>optical guide</li>
+                <li>telescope mounts</li>
+                <li>computer</li>
+                <li>python</li>
+            </ul>
+        </div>
 
+        <div class="proce" id="proce">
+            <h3>Procedure</h3>
+            <ol>
+                <li>Laboratory experiment
+                    <ul>
+                        <li>Attach gray filter at PMTs</li>
+                        <li>Mount beam splitter</li>
+                        <li> Adjust PMTs at right angles</li>
+                        <li> Use LED as point source</li>
+                    </ul>
+                </li>
+                <li>Roof-top experiment
+                    <ul>
+                        <li>Establish telescopes on mounts and keep around 2m distance</li>
+                        <li>Attach pmts and calibrate telescopes</li>
+                        <li>Direct telescope towards desired star</li>
+                    </ul>
+                </li>
+                <li>Turn on the devices carefully and perform calibration</li>
+                <li>Using python plot flux from LED/star at nm scale</li>
+            </ol>
+
+        </div>
+    </section>
+
+    <section>
+        <iframe id="map" src="https://ecap.nat.fau.de/" width="100%" height="900"></iframe>
+    </section>
+
+    <footer class="footer1">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Find us on Facebook (link opens in a new tab)">Facebook</a>
+		<a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Find us on Instagram (link opens in a new tab)">Instagram</a>
+		<a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Find us on Twitter (link opens in a new tab)">Twitter</a>
+        <p>Copyright © Intensity Interferometry 2023</p>
+    </footer>
 
 
 
