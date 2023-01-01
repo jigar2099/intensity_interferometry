@@ -6,9 +6,10 @@ body {
 	background-color: whitesmoke;
 }
 
-h1,h2,h3 {
+h1,h2,h3, div {
 	font-family: 'Merienda One', 'Brush Script MT', cursive;
 }
+h1 {font-size: 3.5rem;}
 p {
 	font-size: 19px; font-weight: bold; font-style: italic; font-family: 'Brush Script MT', cursive;
 	margin-top: 1em ;
@@ -27,8 +28,10 @@ blockquote, figcaption {
 /* HEADER */
 .hbt {
 	height: 25vh;
-	background: center 80% / cover no-repeat;
+	background: center 70% / cover no-repeat;
 	/*line-height: 90px;*/
+	position: relative;
+	width: 200%;
 }
 .interf{
 	text-align : center;
@@ -37,6 +40,10 @@ blockquote, figcaption {
 }
 #hbt-interf {
 	background: url('https://istardb.org/wp-content/uploads/2020/04/aerbanner2a.jpg') fixed;
+	background-position:center;
+	width: auto;
+	height: auto;
+	position: fixed;
 }
 .quote {
 	background-color:aquamarine;
@@ -50,23 +57,29 @@ blockquote, figcaption {
 
 
 /* NAVIGATION */
-nav > a {
+
+.hbt .navigate-to {
+	font-size: large;
+}
+
+.hbt .navigate-to > a {
 	text-decoration: none;
 	color:aqua;
-	margin: 0.5rem;
+	margin: 3px;
 }
-nav > a:hover {
+.hbt .navigate-to > a:hover {
 	color: chartreuse;
 	font-size: 1.2rem;
 	
 }
-.navigate-to {
+.hbt .navigate-to {
 	background-color: black;
+	width: auto;
 }
-.other {
+.hbt .other {
 	text-align: center;
 }
-.page {
+.hbt .page {
 	text-transform: uppercase;
 }
 
@@ -185,8 +198,9 @@ footer > a {
 
 /* HEADER */
 .flux-calculation {
-	height: 25vh;
-	background: center 80% / cover no-repeat;
+	height: 2vh;
+	background: center 90% / cover no-repeat;
+	background-repeat: no-repeat;
 	/*line-height: 90px;*/
 }
 .using-dl{
@@ -195,6 +209,7 @@ footer > a {
 	color: antiquewhite;
 }
 #introduction {
+	background-repeat: no-repeat;
 	background: url('https://www.cpacanada.ca/-/media/site/connecting-and-news/images/event-newsletter/pdevents-2019-issue85-newsletter-800x514.jpg?h=514&la=en&w=800&hash=503B89BE4A01B69C549BC4A8778666D36BC841DF') fixed;
 }
 .quote-dl {
@@ -207,9 +222,8 @@ footer > a {
     text-align: center;
 }
 
-
 /* NAVIGATION */
-nav > a {
+/*nav > a {
 	text-decoration: none;
 	color:aqua;
 	margin: 0.5rem;
@@ -228,36 +242,203 @@ nav > a:hover {
 .page {
 	text-transform: uppercase;
 }
+---------------*{
+	margin:0; padding:0; box-sizing:border-box; font-family:Arial, Helvetica; text-transform:capitalize; text-decoration:none;
+}
+*/
+.flux-calculation {
+	background: black;
+	box-shadow: 0 5px 10px grey;
+	margin-bottom: 25px;
+	display: flex;
+	position: fixed;
+	align-items:baseline;
+
+	justify-content:baseline;
+	z-index: 100;
+	top: 0px;; left: 0; right: 0;
+	opacity: 0.97;
+	/*padding: 0px 10%;*/
+	padding-bottom: 0px;
+}
+.navigate-to {
+	background-color: black;
+	width: 500px;
+	position: bottom;
+	border-radius: 5%;
+	padding-bottom: 0px;
+}
+.flux-calculation .navigate-to ul {
+	list-style: none;
+	padding-bottom: 0px;
+}
+.flux-calculation .navigate-to ul li {
+	position: relative;
+	float:left;
+}
+.flux-calculation .navigate-to ul li a {
+	font-size: 20px;
+	padding: 10px;
+	color: #f4efec;
+	display:block;
+	background: rgb(67, 63, 63);
+	text-decoration: none;
+	opacity: 0.89;
+}
+.flux-calculation .navigate-to ul li a:hover {
+	background: rgb(78, 72, 72);
+	color: rgb(0, 225, 255);
+}
+.flux-calculation .navigate-to ul li ul {
+	position:relative;
+	left: 0;
+	width: 200px;
+	background: black;
+	display: none;
+}
+.flux-calculation .navigate-to ul li ul li {
+	width: 100%;
+	border-top: 1px solid black;
+}
+.flux-calculation .navigate-to ul li ul li ul {
+	left:200px;
+	top: 0;
+}
+.flux-calculation .navigate-to ul li:focus-within > ul ,
+.flux-calculation .navigate-to ul li:hover > ul {
+	display: initial;
+
+}
+
+@media(max-width:991px) {
+	.flux-calculation {
+		padding: 200px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* MOTIVATION AND HISTORY */
 #dl_corr {
 	padding: 1rem 2.2rem;
 	margin-bottom: 1px;
+	margin-top: 0px;
 	background: url('https://developer-blogs.nvidia.com/wp-content/uploads/2022/07/convai-blog-image-1600x900-1.png') center center / cover no-repeat fixed;
 	background-size: cover;
 	/*width: 300px;
 	height: 300px;*/
   	background-position:center;
 	background-repeat: no-repeat;
-	color:silver;
+	color:rgb(251, 249, 249);
 	text-shadow: 1px 0 rgb(75, 68, 68), 0 1px rgb(78, 74, 74), 1px 0 rgb(78, 71, 71), 0 -1px rgb(69, 77, 80);
 }
 
-.forecast {
+.ele_nn {
     margin: 0;
-    padding: 0.3rem;
-    background-color: #eee;
-    font: 1rem 'Fira Sans', sans-serif;
+    padding: 0rem;
+    background-color: rgb(64, 60, 60);
+    font: 'Fira Sans', sans-serif;
+	border-radius: 20px;
+	opacity: 0.79;
 }
 
-.forecast > h1,
-.day-forecast {
+.ele_nn > h1 {
     margin: 0.5rem;
     padding: 0.3rem;
-    font-size: 1.2rem;
+	font-size: 3.5rem;
+	text-shadow: 2px 0 rgb(10, 10, 10), 0 2px rgb(9, 9, 9), 7px 0 rgb(7, 7, 7), 0 7px rgb(9, 9, 9);
+}
+.mlp {
+    margin: 0.5rem;
+    padding: 0.3rem;
+	text-shadow: 2px 0 rgb(10, 10, 10), 0 2px rgb(9, 9, 9), 2px 0 rgb(7, 7, 7), 0 -2px rgb(9, 9, 9);
 }
 
-.day-forecast {
+.mlp {
     background: right/contain content-box border-box no-repeat url('/media/examples/rain.svg') rgb(97, 95, 95);
 }
 /*https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article*/
+
+
+
+/* NEURAL NETWORK TYPES */
+/*https://www.youtube.com/watch?v=5Uz33vo4GoQ&ab_channel=DevLangford*/
+
+.nns {
+	padding: 5rem 5.2rem;
+	margin-bottom: 1px;
+	margin-top: 20px;
+	background: url('https://wallpaperaccess.com/full/1560285.jpg') center center / cover no-repeat fixed;
+	background-size: cover;
+	/*width: 300px;
+	height: 300px;*/
+  	background-position:center;
+	background-repeat: no-repeat;
+	color:rgb(247, 240, 240);
+	background-color: rgb(64, 60, 60);
+	opacity: 0.93;
+	text-shadow: 1px 0 rgb(75, 68, 68), 0 1px rgb(78, 74, 74), 1px 0 rgb(78, 71, 71), 0 -1px rgb(69, 77, 80);
+}
+
+
+.nns .Fully, .lstm, .cnn {
+	padding: 1rem 1.2rem;
+	margin-bottom: 1px;
+	margin-top: 20px;
+    background-color: rgb(64, 60, 60);
+	font-size: 2.5rem;
+	border-radius: 20px;
+	opacity: 0.93;
+}
+.nns .container {
+	margin:150px auto;
+	width: 50%;
+	padding: 8px;
+}
+
+img {
+	float:left;
+	width: 480px;
+	height: 360px;
+	padding: 0 10px 0 0;
+}
+.nns .text {
+	text-align: justify;
+	width:100%;
+	font-size: 1.9rem;
+}
+
+.text-collapse {
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+  }
+  
+  .text-collapse:hover {
+	-webkit-line-clamp: unset;
+  }
+
+  .fully {
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+  }
+  
+  .fully:hover {
+	-webkit-line-clamp: unset;
+  }
