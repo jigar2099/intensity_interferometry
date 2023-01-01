@@ -25,17 +25,17 @@ blockquote, figcaption {
 
 
 /* HEADER */
-.flux-calculation {
+.hbt {
 	height: 25vh;
 	background: center 80% / cover no-repeat;
 	/*line-height: 90px;*/
 }
-.using-dl{
+.interf{
 	text-align : center;
 	vertical-align: middle;
 	color: antiquewhite;
 }
-#introduction {
+#hbt-interf {
 	background: url('https://istardb.org/wp-content/uploads/2020/04/aerbanner2a.jpg') fixed;
 }
 .quote {
@@ -197,7 +197,7 @@ footer > a {
 #introduction {
 	background: url('https://www.cpacanada.ca/-/media/site/connecting-and-news/images/event-newsletter/pdevents-2019-issue85-newsletter-800x514.jpg?h=514&la=en&w=800&hash=503B89BE4A01B69C549BC4A8778666D36BC841DF') fixed;
 }
-.quote {
+.quote-dl {
 	background-color:aquamarine;
 	opacity: 0.65;
 	color:aquamarine;
