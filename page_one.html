@@ -9,40 +9,53 @@
 </head>
 
 <body>
-    <header class="hbt interf" id="hbt-interf">
-		<h1>Flux calculation from PMT using Deep Learning</h1>
-		<p>From laboratory experiment to stellar flux calculation</p>
-        <!--<figure class="quote">
-            <blockquote>
-                It suddenly struck me that that tiny pea, pretty and blue, was the
-                Earth. I put up my thumb and shut one eye, and my thumb blotted
-                out the planet Earth.
-            </blockquote>
-            <figcaption>
-              &mdash; Neil Armstrong, <cite></cite>  </figcaption>
-          </figure>-->
-          <nav class="navigate-to other page">
-            <a href="#introduction" aria-label="Go to the top of the page">Introduction</a>
-            <a href="#history" aria-label="Go to the history section">History</a>
-            <a href="#experiments">Experiments</a>
-            <a href="#instument-and-process">Instrument and procedure</a>
-            <a href="#experiments">Experiments</a>
-            <a href="page_two.html">Deep Learning</a>
     
-        </nav>
-    </header>
-    
-    
-    <!--<hr>
-    <hr>-->
+
+    <header class="flux-calculation using-dl" id="using-dl">
+        <nav class="navigate-to other page">
+          
+          <ul>
+              <li><a href="page_one.html#introduction">Interferometry +</a>
+                  <ul>
+                      <li><a href="#introduction">Introduction</a>
+                      <li><a href="#history">History</a></li>
+                      <li><a href="#experiments">Experiments</a></li>
+                      <li><a href="#instument-and-process">Instruments and procedure</a></li>
+                      <li><a href="#experiments">Experiments</a></li>
+                  </ul>
+              </li>
+              
+              <li><a href="#dl_corr">Deep Learning +</a>
+                  <ul>
+                      <li><a href="page_two.html#motivation2">Motivation</a></li>
+                      <li><a href="page_two.html#ele_nn">Elements of NN</a></li>
+                      <li><a href="page_two.html#nns">NN types +</a>
+                          <ul>
+                              <li><a href="page_two.html#fully">FCNN</a></li>
+                              <li><a href="page_two.html#cnn">CNN</a></li>
+                              <li><a href="page_two.html#lstm">LSTM</a></li>
+                          </ul>
+                      </li>
+                      
+                  </ul>
+              </li>
+              <li><a href="page_three.html#test">Test</a>
+              <li><a href="page_three.html#contact">Contact</a>
+          </ul>
+  
+      </nav>
+  </header>
 
     
 
-    
+  
     <section class="intensity_int" id="intensity_int">
-        <h1>Intensity Interferometry</h1>
-        <h2>Motivation</h2>
+        
+        
         <div class="motivation1">
+            <h1>Flux calculation from PMT using Deep Learning</h1>
+            <h2>Intensity Interferometry</h2>
+            <h3>Motivation</h3>
             <p class="motivation" id="motivation">Our understanding of stars comes from high angular resolution results from star’s light
                 spectrum and variability, for which several attempts are done utilizing many advanced
                 optical instruments including extremely large telescopes. The highest resolution so far is
@@ -97,7 +110,7 @@
 
 
     <section class="diff_exp types" id="diff_exp">
-        <h1>Different experiments</h1>
+        <h2>Different experiments</h2>
         <div class="experiments" id="experiments">
             <ul>
                 <li>Imaging Air Cherenkov telescopes
@@ -117,7 +130,7 @@
                 <li>VLT (Very Large Telescope)</li>
             </ul>
         </div>
-        <a href="https://insidetheperimeter.ca/wp-content/uploads/2020/11/The_NOEMA_observatory_operated_by_IRAM-2000x900.jpg" class="veritas_link" id="veritas_link"> Source</a>
+        <a href="https://www.manmonthly.com.au/news/square-kilometre-array-project-prospect-australian-businesses/" class="veritas_link" id="veritas_link"> Source</a>
     </section>
 
     <section class="instument-and procedure" id="instument-and-process">
@@ -163,14 +176,43 @@
         </div>
     </section>
 
-    <section>
-        <iframe id="map" src="https://ecap.nat.fau.de/" width="100%" height="900"></iframe>
+    <section class="ecap_web" id="ecap_web">
+        <h1>Research center where we have done several experiments</h1>
+        <iframe id="map" src="https://ecap.nat.fau.de/" width="1500" height="500"></iframe>
     </section>
 
     <footer class="footer1">
-        <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Find us on Facebook (link opens in a new tab)">Facebook</a>
-		<a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Find us on Instagram (link opens in a new tab)">Instagram</a>
-		<a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Find us on Twitter (link opens in a new tab)">Twitter</a>
+        <h2>References</h2>
+        <ol>
+
+            <li><p>
+                <a href="https://ecap.nat.fau.de/wp-content/uploads/2022/03/2021_Bhanderi_MA_thesis.pdf" target="_blank" rel="noopener" aria-label="Measurement of the diameter of orionis with the interferometer">
+                    F. G. Michelson A. A. ; Pease, ‘Measurement of the diameter of orionis with the interferometer.’, Astrophysical Journal,, vol. 53, pp. 249–259, 1921.
+                    </a>
+                </p>
+            </li>
+
+            <li><p>
+                <a href="https://ecap.nat.fau.de/wp-content/uploads/2022/03/2021_Bhanderi_MA_thesis.pdf" target="_blank" rel="noopener" aria-label="Optical Coherence and Quantum Optics">
+                    E. W. Leonard Mandel, Optical Coherence and Quantum Optics. 1995, pp. 0–839, isbn: 9781139644105.
+                    </a>
+                </p>
+            </li>
+
+            <li><p>
+                M. Ryle, ‘The application of interferometric methods in radio astronomy’, Vistas in Astronomy, vol. 1,
+pp. 532–541, 1955, issn: 0083-6656.
+                <a href="https://doi.org/https://doi.org/10.1016/0083-6656(55)90067-2" target="_blank" rel="noopener" aria-label="Optical Coherence and Quantum Optics">
+                    : https://doi.org/10.1016/0083- 6656(55)90067- 2. [Online]
+                    </a>
+                    <a href="https://www.sciencedirect.com/science/article/pii/0083665655900672" target="_blank" rel="noopener" aria-label="Optical Coherence and Quantum Optics">
+                        Available: https://www.sciencedirect.com/science/article/pii/0083665655900672.
+                        </a>
+                </p>
+            </li>
+            
+        </ol>
+       
         <p>Copyright © Intensity Interferometry 2023</p>
     </footer>
 

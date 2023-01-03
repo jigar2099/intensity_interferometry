@@ -12,12 +12,7 @@
     <header class="flux-calculation using-dl" id="using-dl">
 
           <nav class="navigate-to other page">
-            <!--<a href="page_one.html#introduction" aria-label="Go to the top of the page">Introduction</a>
-            <a href="page_one.html#history" aria-label="Go to the history section">History</a>
-            <a href="page_one.html#experiments">Experiments</a>
-            <a href="page_one.html#instument-and-process">Instrument and procedure</a>
-            <a href="page_one.html#experiments">Experiments</a>
-            <a href="#dl_corr">Deep Learning</a>-->
+           
             <ul>
                 <li><a href="page_one.html#introduction">Interferometry +</a>
                     <ul>
@@ -51,24 +46,15 @@
     </header>
     
     
-    <!--<hr>
-    <hr>-->
-
-    <!--<nav class="navigate-to other page">
-        <a href="page_one.html#introduction" aria-label="Go to the top of the page">Introduction</a>
-        <a href="page_one.html#history" aria-label="Go to the history section">History</a>
-        <a href="page_one.html#experiments">Experiments</a>
-        <a href="page_one.html#instument-and-process">Instrument and procedure</a>
-        <a href="page_one.html#experiments">Experiments</a>
-        <a href="#dl_corr">Deep Learning</a>
-    </nav>-->
+    
 
     
     <section class="dl_corr" id="dl_corr">
-        <h1>Deep Learning for correlation</h1>
-        <h2>Motivation</h2>
+        
         <div class="motivation2">
-            <p class="motivation2" id="motivation2">Intensity interferometry is part of optical interferometry, which provides a sub-milliarcsecond resolution of astronomical objects. 
+            <h1>Deep Learning for correlation</h1>
+            <h2>Motivation</h2>
+            <p class="motivation3" id="motivation3">Intensity interferometry is part of optical interferometry, which provides a sub-milliarcsecond resolution of astronomical objects. 
                 In intensity interferometry one correlates intensities of optical fluxes rather than amplitudes of waves.
                For a successful measurement one needs a large light collecting
                area for several telescopes separated
@@ -85,12 +71,15 @@
                 Machine learning methods can provide predictive models to solve complex problems either
 with simulated or measured data, using classification or regression approach. In the last
 decade, DL has been extensively used to solve various problems such as Natural Language
-processing [Su14], speech recognition [Hi12] and Computer Vision [He16; LBH15; Su12].
-Especially, Computer Vision methods have been used thoroughly in physics [Ch20; PP18].
+processing [1],
+ speech recognition [2]
+  and Computer Vision [3,4,5].
+Especially, Computer Vision methods have been used thoroughly in physics [6; 7].
 In this work, we focused on various types of DL models such as Convolutional Neural
 Network (CNN), Long-Short Term Memory Unit (LSTM) and Gated Recurrent Unit (GRU)
 in order to determine the photon rates detected by PMTs. We compared the results with more traditional methods of estimating the photon rate: peak-finding method from scipy6
-library and charge integration [21; Zm21]. The peak finding method provides good results
+library and charge integration [8; 9].
+ The peak finding method provides good results
 at low rates and underestimates the number of photons at high rates, when many peaks are
 overlapping.
             </p>
@@ -98,9 +87,9 @@ overlapping.
 
 
         <article class="ele_nn">
-            <h1>Elements of Neural Networks</h1>
+            <h2>Elements of Neural Networks</h2>
             <article class="mlp">
-                <h2>Neural Network</h2>
+                <h3>Neural Network</h3>
                 <p>Neural networks are made up of neurons, and these neurons are arranged in such a way
                     that they create layer like structure, in which each neurons has connection with previous
                     layer neurons and next layer neurons. These neurons have characteristic of computation
@@ -111,13 +100,13 @@ overlapping.
                     of second layer. Similarly for deeper network, one-by-one layer use their respective initialized weight matrix for the calculation of feature importance.</p>
             </article>
             <article class="mlp">
-                <h2>Optimizer</h2>
+                <h3>Optimizer</h3>
                 <p>With the help of BP algorithm NNs calculate the required gradient for weight updates, but
                     do not specify the way of their use in order to implement update of weights. Optimizers
                     fullfils this requirement. There are various gradient based learning-algorithms.</p>
             </article>
             <article class="mlp">
-                <h2>Loss function</h2>
+                <h3>Loss function</h3>
                 <p>Loss function is the function which compares by mapping an output values of model with
                     truth values, which is further used for optimisation of model parameters. In general, one
                     might need to maximize or minimize the loss function according to nature of function
@@ -155,7 +144,7 @@ needs to consider them in recursive calculation of partial derivatives of C with
             <h2>Convolutional Neural Network</h2>
             <img src="https://miro.medium.com/max/1280/1*h01T_cugn22R2zbKw5a8hA.gif" alt="">
 
-            <div class="text" id="text">
+            <div class="text" id="text2">
                 In general, convolution is a mathematical operation applied on two functions and the result of this implementation gives third function, which determines that how shape of one
 function depends on other function’s shape. Neural network which simply uses "Convolution" instead of matrix multiplication is known as Convolutional Neural Networks(CNN).
 Until the 1960s and 1970s, NNs were just simple connections of neurons which pass
@@ -165,18 +154,19 @@ was developed in order to achieve optimization in training in both SL and UL3
 , which
 was found very difficult in practice in 1980 but applied first time in 1981, and by the
 1990 it became an explicit research subject. BP works on simple concept of chain rule[17]
-applied on parameter space with iterations which results Steepest descent[18]. Also, in
-case of time series prediction and sequence classification, BP plays vital role[19]. In 1979,
+applied on parameter space with iterations which results Steepest descent[18]. 
+Also, in
+case of time series prediction and sequence classification, BP plays vital role[19]. 
+In 1979,
 Kunihiko Fukushima proposed an idea of multi-layer hierarchical neural network for pattern recognition and handwritten digit recognition, which was known as Neocognitron
 NN and became inspiration for CNNs later on[20].
 
             </div>
         </div>
 
-        <button data-toggle="collapse" data-target="#lstm">Collapsible</button>
         <div class="lstm" id="lstm">
                 <h2>Lont-Short term Memory Unit(LSTM)</h2>    
-                <div class="text" id="text">
+                <div class="text" id="text3">
                     First it takes input sequences and process them and store some information in
 memory called hidden state. It passes this stored information to next time cell. Now in
 next cell, information obtained from previous cell’s hidden state and input information of
@@ -200,14 +190,114 @@ different gates, forget gate, input gate and output gate.
 
 
 
-    <section>
-        <iframe id="map" src="https://www.youtube.com/embed/7R2Ehcvdxmg&t=1564s&ab_channel=InstitutdesHautes%C3%89tudesScientifiques%28IH%C3%89S%29" width="100%" height="900"></iframe>
+    <section class="ala_asp" id="ala_asp">
+        <h2>An explaination of Intensity Interferometry by Nobel laureate</h2>
+        <iframe id="map" src="https://www.youtube.com/embed/7R2Ehcvdxmg&t=1564s&ab_channel=InstitutdesHautes%C3%89tudesScientifiques%28IH%C3%89S%29" width="700" height="500"></iframe>
     </section>
 
-    <footer class="footer1">
-        <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Find us on Facebook (link opens in a new tab)">Facebook</a>
-		<a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Find us on Instagram (link opens in a new tab)">Instagram</a>
-		<a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Find us on Twitter (link opens in a new tab)">Twitter</a>
+
+
+    <footer class="footer">
+        <h2>References</h2>
+        <ol>
+
+            <li><p>
+                Sutskever, I. et al.: Sequence to Sequence Learning with Neural Networks. In:
+Advances in Neural Information Processing Systems. Vol. 27, Curran Associates,
+Inc., 2014.
+                </p>
+            </li>
+
+            <li><p>
+                Hinton, G. et al.: Deep Neural Networks for Acoustic Modeling in Speech Recog-
+nition: The Shared Views of Four Research Groups. IEEE Signal Processing
+Magazine 29/6, pp. 82–97, 2012.
+                </p>
+            </li>
+
+            <li><p>
+                He, K. et al.: Deep Residual Learning for Image Recognition. In: 2016 IEEE
+Conference on Computer Vision and Pattern Recognition (CVPR). Pp. 770–778,
+2016.
+                </p>
+            </li>
+
+            <li><p>
+                LeCun, Y.; Bengio, Y.; Hinton, G.: Deep learning. Nature 521/7553, pp. 436–
+444, May 2015.
+                </p>
+            </li>
+
+            <li><p>
+                Sutskever, I. et al.: ImageNet Classification with Deep Convolutional Neural
+Networks. In: Advances in Neural Information Processing Systems. Vol. 25,
+Curran Associates, Inc., 2012.
+                </p>
+            </li>
+
+            <li><p>
+                Chianese, M. et al.: Differentiable strong lensing: uniting gravity and neural
+nets through differentiable probabilistic programming. Monthly Notices of the
+Royal Astronomical Society 496/1, pp. 381–393, May 2020.
+                </p>
+            </li>
+
+            <li><p>
+                Pasquet-Itam, J.; Pasquet, J.: Deep learning approach for classifying, detecting
+                and predicting photometric redshifts of quasars in the Sloan Digital Sky Survey
+                stripe 82. A&A 611/, A97, 2018.
+                </p>
+            </li>
+
+            <li><p>
+                <a href="https://ecap.nat.fau.de/wp-content/uploads/2022/03/2021_Bhanderi_MA_thesis.pdf" target="_blank" rel="noopener" aria-label="Measurement of the diameter of orionis with the interferometer">
+                    Photon flux calculation using Deep Learning.
+                    </a>
+                </p>
+            </li>
+            
+            <li><p>
+                Zmija, A. et al.: Optical intensity interferometry lab tests in preparation of
+stellar diameter measurements at IACTs at GHz photon rates. Monthly Notices
+of the Royal Astronomical Society 509/3, pp. 3113–3118, Oct. 2021.
+
+                </p>
+            </li>
+
+            <li><p>
+                D. S, ‘The numerical solution of variational problems.’, Journal of Mathematical Analysis andApplications,,
+vol. 5, no. 1, pp. 30–45, 1962.
+
+                </p>
+            </li>
+
+            <li><p>
+                K. J. Henry, ‘Gradient theory of optimal paths’, ARS Journal, 1960.
+
+                </p>
+            </li>
+
+
+            <li><p>
+                <a href="https://arxiv.org/abs/404.7828%20v4" target="_blank" rel="noopener" aria-label="Measurement of the diameter of orionis with the interferometer">
+                    J Schmidhuber, ‘Deep Learning in Neural Networks: An Overview:’ ArXiv e-prints, 2014. arXiv: 404.
+7828v4 [cs.NE].
+
+                    </a>
+                </p>
+            </li>
+
+
+            <li><p>
+                Y. H. G. LeCun Yann; Bengio, ‘Deep learning’, Nature, vol. 521, no. 7553, pp. 436–444, 2015
+
+                </p>
+            </li>
+
+
+
+        </ol>
+       
         <p>Copyright © Intensity Interferometry 2023</p>
     </footer>
 

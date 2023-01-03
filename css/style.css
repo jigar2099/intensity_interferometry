@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Merienda+One|Open+Sans&display=swap');
 
 body {
-	font-family: 'Open Sans', Arial, sans-serif;
+	font-family: 'Times New Roman', 'Open Sans', Arial, sans-serif;
 	margin: 0;
 	background-color: whitesmoke;
 }
 
 h1,h2,h3, div {
-	font-family: 'Merienda One', 'Brush Script MT', cursive;
+	font-family: 'Times New Roman', 'Merienda One', 'Brush Script MT', cursive;
 }
 h1 {font-size: 3.5rem;}
 p, label {
@@ -25,7 +25,7 @@ legend {
 }
 blockquote, figcaption {
 	color: black;
-	font-size: 19px; font-weight: bold; font-style: italic; font-family: 'Brush Script MT'
+	font-size: 19px; font-weight: bold; font-style: italic; font-family: 'Times New Roman', 'Brush Script MT'
 }
 
 
@@ -40,18 +40,21 @@ blockquote, figcaption {
 	/*line-height: 90px;*/
 	position: relative;
 	width: 200%;
+	padding: 0;
+	margin: 0;
 }
 .interf{
 	text-align : center;
 	vertical-align: middle;
-	color: antiquewhite;
 }
 #hbt-interf {
 	background: url('https://istardb.org/wp-content/uploads/2020/04/aerbanner2a.jpg') fixed;
 	background-position:center;
 	width: auto;
 	height: auto;
-	position: fixed;
+	position: relative;
+	background-color:black;
+	opacity: 0.85;
 }
 .quote {
 	background-color:aquamarine;
@@ -64,61 +67,40 @@ blockquote, figcaption {
 }
 
 
-/* NAVIGATION */
-
-.hbt .navigate-to {
-	font-size: large;
-}
-
-.hbt .navigate-to > a {
-	text-decoration: none;
-	color:aqua;
-	margin: 3px;
-}
-.hbt .navigate-to > a:hover {
-	color: chartreuse;
-	font-size: 1.2rem;
-	
-}
-.hbt .navigate-to {
-	background-color: black;
-	width: auto;
-}
-.hbt .other {
-	text-align: center;
-}
-.hbt .page {
-	text-transform: uppercase;
-}
-
-
-
 
 
 /* MOTIVATION AND HISTORY */
 #intensity_int {
-	padding: 13rem 2.2rem;
+	padding: 23rem 11rem;
 	margin-bottom: 1px;
-	background: url('https://wallpapercave.com/wp/wp4222694.jpg') center center / cover no-repeat fixed;
+	background: url('https://www.iac.es/sites/default/files/images/inline-images/CTA_telescopes_scales_4K_03_0.jpg') center center / cover no-repeat fixed;
 	background-size: cover;
 	/*width: 300px;
 	height: 300px;*/
+	background-color: #6b6a69;
+	
+
   	background-position:center;
 	background-repeat: no-repeat;
-	color:silver;
+	color:rgb(246, 242, 242);
 	text-shadow: 1px 0 rgb(75, 68, 68), 0 1px rgb(78, 74, 74), 1px 0 rgb(78, 71, 71), 0 -1px rgb(69, 77, 80);
 }
 
-
+.motivation1, .motivation2 {
+	background-color: #0a0a0a;
+	opacity: 0.80;
+	border-radius: 8px;
+	padding:2rem;
+}
 
 
 
 
 /* EXPERIMENTS */
 #diff_exp {
-	padding: 1rem 1rem;
+	padding: 7rem 1rem;
 	margin-bottom: 0px;
-	background: url('https://insidetheperimeter.ca/wp-content/uploads/2020/11/The_NOEMA_observatory_operated_by_IRAM-2000x900.jpg') fixed;
+	background: url('https://upload.wikimedia.org/wikipedia/commons/2/2f/Cta_concept.jpg') fixed;
 	background-size: cover;
 	/*width: 300px;
 	height: 300px;*/
@@ -143,8 +125,6 @@ blockquote, figcaption {
 .instument-and {
 	border-radius: 1px;
 	width: 99.5%;
-	/*margin: 0.3%;*/
-	/*border-radius: 8px;*/
 	background: url('/css/iceact_setup.jpeg') fixed;
 	background-position:center;
 	background-repeat: no-repeat;
@@ -171,25 +151,25 @@ blockquote, figcaption {
 /* FOOTER */
 footer {
 	text-decoration: none;
-	background-color: #6b6a69;
-	padding: 1em;
-	text-align: center;
-	font-size: 1.2rem;
+	background-color: #b0b0b0;
+	padding: 2em;
+	text-align: left;
+	font-size: 1.5rem;
 	
 }
 footer > span {
 	color: silver;
 }
-footer > a:hover {
-	color: beige;
+footer  a:hover {
+	color: rgb(200, 197, 202);
 	text-decoration: none;
-	padding: 0 15px;
+	padding: 0 0px;
 	font-size: 1.5rem;
 }
-footer > p {
-	color: silver;
+footer  p {
+	color:  rgb(10, 10, 10);
 }
-footer > a {
+footer  a {
 	text-decoration: none;
 }
 
@@ -207,9 +187,8 @@ footer > a {
 /* HEADER */
 .using-dl {
 	height: 2vh;
-	background: center 90% / cover no-repeat;
+	background: center 100% / cover no-repeat;
 	background-repeat: no-repeat;
-	/*line-height: 90px;*/
 }
 .page{
 	text-align : center;
@@ -223,18 +202,18 @@ footer > a {
 .using-dl {
 	background-color:aquamarine;
 	color:aquamarine;
-	width: 100%;
+	width: auto;
     height: 90px;
-    margin: 0 auto;
+    margin: auto;
     text-align: center;
 }
 
 /*-----------NAVIGATION------------*/
 .using-dl {
 	background: black;
-	box-shadow: 0 5px 10px grey;
+	box-shadow: 0 17px 17px rgb(89, 89, 89);
 	margin-bottom: 25px;
-	margin-top: 25px;
+	margin-top: 0px;
 	display: flex;
 	align-items:baseline;
 
@@ -242,16 +221,15 @@ footer > a {
 	z-index: 1000;
 	top: 0px;; left: 0; right: 0;
 	opacity: 0.97;
-	/*padding: 0px 10%;*/
 	padding-bottom: 0px;
 }
 .page {
 	background-color: black;
-	width: 800px;
+	width: auto;
 	position: bottom;
 	border-radius: 5%;
 	padding-bottom: 0px;
-	padding-right: 40%;
+	padding-right: 0;
 }
 .using-dl .page ul {
 	list-style: none;
@@ -295,11 +273,7 @@ footer > a {
 
 }
 
-@media(max-width:991px) {
-	.candidate {
-		padding: 200px;
-	}
-}
+
 
 
 
@@ -318,37 +292,36 @@ footer > a {
 
 /* MOTIVATION AND HISTORY */
 #dl_corr {
-	padding: 1rem 2.2rem;
+	padding: 23rem 11rem ;
+
 	margin-bottom: 1px;
 	margin-top: 0px;
 	background: url('https://developer-blogs.nvidia.com/wp-content/uploads/2022/07/convai-blog-image-1600x900-1.png') center center / cover no-repeat fixed;
 	background-size: cover;
-	/*width: 300px;
-	height: 300px;*/
   	background-position:center;
 	background-repeat: no-repeat;
 	color:rgb(251, 249, 249);
-	text-shadow: 1px 0 rgb(75, 68, 68), 0 1px rgb(78, 74, 74), 1px 0 rgb(78, 71, 71), 0 -1px rgb(69, 77, 80);
+	text-shadow: 1px 0 rgb(250, 245, 245), 0 1px rgb(78, 74, 74), 1px 0 rgb(78, 71, 71), 0 -1px rgb(69, 77, 80);
 }
 
 .ele_nn {
-    margin: 0;
-    padding: 0rem;
-    background-color: rgb(64, 60, 60);
+    margin: 3rem;
+    padding: 2rem;
+    background-color: rgb(15, 15, 15);
     font: 'Fira Sans', sans-serif;
 	border-radius: 20px;
-	opacity: 0.79;
+	opacity: 0.75;
 }
 
 .ele_nn > h1 {
-    margin: 0.5rem;
-    padding: 0.3rem;
-	font-size: 3.5rem;
+    margin: 2.5rem;
+    padding: 2.3rem;
+	font-size: 5.5rem;
 	text-shadow: 2px 0 rgb(10, 10, 10), 0 2px rgb(9, 9, 9), 7px 0 rgb(7, 7, 7), 0 7px rgb(9, 9, 9);
 }
 .mlp {
-    margin: 0.5rem;
-    padding: 0.3rem;
+    margin: 2.5rem;
+    padding: 2.3rem;
 	text-shadow: 2px 0 rgb(10, 10, 10), 0 2px rgb(9, 9, 9), 2px 0 rgb(7, 7, 7), 0 -2px rgb(9, 9, 9);
 }
 
@@ -368,8 +341,7 @@ footer > a {
 	margin-top: 20px;
 	background: url('https://wallpaperaccess.com/full/1560285.jpg') center center / cover no-repeat fixed;
 	background-size: cover;
-	/*width: 300px;
-	height: 300px;*/
+	
   	background-position:center;
 	background-repeat: no-repeat;
 	color:rgb(247, 240, 240);
@@ -394,9 +366,9 @@ footer > a {
 	padding: 8px;
 }
 
-img {
+.nns img {
 	float:left;
-	width: 480px;
+	width: 530px;
 	height: 360px;
 	padding: 0 10px 0 0;
 }
@@ -448,7 +420,6 @@ img {
 	height: 2vh;
 	background: center 90% / cover no-repeat;
 	background-repeat: no-repeat;
-	/*line-height: 90px;*/
 }
 .form{
 	text-align : center;
@@ -464,86 +435,221 @@ img {
 	background-color:rgb(4, 4, 4);
 	color:aquamarine;
 	width: 100%;
-    height: 90px;
+    height: 100px;
     margin: 0 auto;
+	padding:0;
     text-align: center;
 }
 
 /*-----------NAVIGATION------------*/
-.candidate-form {
-	background: black;
-	box-shadow: 0 5px 10px grey;
-	margin-bottom: 25px;
-	margin-top: 25px;
+
+
+
+.ala_asp {
+	padding: 1rem 11rem ;
+
+	margin-bottom: 1px;
+	margin-top: 0px;
+	background: url('https://ucscextension-live-28cd95cf77884d15bb06-01c17c1.divio-media.net/images/using-satellite-data-ai-for-.2e16d0ba.fill-2400x858-c100.jpg') fixed;
+	background-position:center;
+	color: antiquewhite;
+	width: auto;
+	height: auto;
+}
+
+
+.ecap_web {
+	padding: 2rem 3rem ;
+
+	margin-bottom: 0px;
+	margin-top: 0px;
+	background: url('https://canberraweekly.com.au/wp-content/uploads/2022/12/NMA-BTMW-Hero-Image-1.jpg') fixed;
+	background-position:center;
+	color: antiquewhite;
+	width: auto;
+	height: auto;
+}
+
+
+
+
+/*-------------form----------------------------------------------*/
+
+.test_kn {
+	padding: 3rem 6rem ;
+
+	margin-bottom: 0px;
+	margin-top: 0px;
+	background: url('https://dritter.net/images/astronomy/nq_cassiopeiae-RGB-CFF-01m.jpg') center center / cover no-repeat fixed;
+	background-size: cover;
+	/*width: 300px;
+	height: 300px;*/
+  	background-position:center;
+	background-repeat: no-repeat;
+	color:rgb(15, 15, 15);
+	text-shadow: 1px 0 rgb(255, 255, 255), 0 1px rgb(78, 74, 74), 1px 0 rgb(78, 71, 71), 0 -1px rgb(69, 77, 80);
+}
+.test {
+    margin: 3rem;
+    padding: 2rem;
+    background-color: rgb(243, 236, 236);
+    font: 'Fira Sans', sans-serif;
+	border-radius: 20px;
+	opacity: 0.87;
+}
+
+
+
+
+
+
+
+.contact {
+	padding-left: 9.0rem;
+	padding-right: 0.5rem;
+	padding-top: 0;
+	padding-bottom: 5rem;
+
+	margin-bottom: 0px;
+	margin-top: 0px;
+	background: url('https://dritter.net/images/astronomy/nq_cassiopeiae-RGB-CFF-01m.jpg') center center / cover no-repeat fixed;
+	background-size: cover;
+	
+  	background-position:center;
+	background-repeat: no-repeat;
+	color:rgb(15, 15, 15);
+	text-shadow: 1px 0 rgb(255, 255, 255), 0 1px rgb(78, 74, 74), 1px 0 rgb(78, 71, 71), 0 -1px rgb(69, 77, 80);
+}
+.container1 {
+	width: 85%;
+	background: #fff;
+	border-radius: 20px;
+	padding: 20px 60px 30px 40px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	opacity: 0.87;
+  }
+  .container1 .content{
 	display: flex;
-	align-items:center;
-
-	justify-content:baseline;
-	z-index: 1000;
-	top: 0px;; left: 0; right: 0;
-	opacity: 0.97;
-	/*padding: 0px 10%;*/
-	padding-bottom: 0px;
-}
-.navi {/*box change*/
-	background-color: black;
-	width: 800px;
-	position: bottom;
-	border-radius: 5%;
-	padding-right: 40%;
-}
-.candidate .navi ul {
-	list-style: none;
-	padding-bottom: 0px;
-}
-.candidate .navi ul li {
+	align-items: center;
+	justify-content: space-between;
+  }
+  .container1 .content .le_sd{
+	width: 25%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1px;
 	position: relative;
-	float:left;
-}
-.candidate .navi ul li a {
-	font-size: 20px;
-	padding: 10px;
-	color: #f4efec;
-	display:block;
-	background: rgb(67, 63, 63);
-	text-decoration: none;
-	opacity: 0.89;
-}
-.candidate .navi ul li a:hover {
-	background: rgb(78, 72, 72);
-	color: rgb(0, 225, 255);
-}
-.candidate .navi ul li ul {
-	position:absolute;
-	left: 0;
-	width: 200px;
-	background: black;
-	display: none;
-}
-.candidate .navi ul li ul li {
+  }
+  .content .le_sd::before{
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 11px;
+	right: -30px;
+	top: 50%;
+	transform: translateY(-50%);
+	background: #afafb6;
+  }
+  .content .le_sd .dts{
+	margin: 3px;
+	text-align: center;
+  }
+  .content .le_sd .dts i{
+	font-size: 30px;
+	color: #5b5a5a;
+	margin-bottom: 5px;
+  }
+  .content .le_sd .dts .topic{
+	font-size: 18px;
+	font-weight: 500;
+  }
+  .content .le_sd .dts .text-one{
+	font-size: 19px;
+	color: #0d0d0d;
+  }
+
+
+  .content .le_sd .dts .text-two{
+	font-size: 19px;
+	color: #0f0f0f;
+  }
+  .container1 .content .rg_sd{
+	width: 85%;
+	margin-left: 75px;
+  }
+  .content .rg_sd .tpc_txt{
+	font-size: 23px;
+	font-weight: 600;
+	font-weight: bold;
+	color: #0707f8;
+  }
+  .rg_sd .inp_bx{
+	height: 50px;
 	width: 100%;
-	border-top: 1px solid black;
-}
-.candidate .navi ul li ul li ul {
-	left:200px;
-	top: 0;
-}
-.candidate .navi ul li:focus-within > ul ,
-.candidate .navi ul li:hover > ul {
-	display: initial;
+	margin: 20px 0;
+  }
+  .rg_sd .inp_bx input,
+  .rg_sd .inp_bx textarea{
+	height: 100%;
+	width: 70%;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	background: #F0F1F8;
+	border-radius: 6px;
+	padding: 0 15px;
+	resize: none;
+  }
+  .rg_sd .msg_bx{
+	min-height: 110px;
+  }
+  .rg_sd .inp_bx textarea{
+	padding-top: 6px;
+  }
+  .rg_sd .btn{
+	display: inline-block;
+	margin-top: 12px;
+  }
+  .rg_sd .btn input[type="button"]{
+	color: #fff;
+	font-size: 18px;
+	outline: none;
+	border: none;
+	padding: 8px 16px;
+	border-radius: 6px;
+	background: #090909;
+	cursor: pointer;
+  }
 
-}
+ input[type=submit]{
+	color: #fff;
+	font-size: 18px;
+	outline: none;
+	border: none;
+	padding: 4px 8px;
+	border-radius: 6px;
+	background: #090909;
+	cursor: pointer;
+  }
+  input[type=reset]{
+	color: #fff;
+	font-size: 18px;
+	outline: none;
+	border: none;
+	padding: 4px 8px;
+	border-radius: 6px;
+	background: #090909;
+	cursor: pointer;
+  }
 
-@media(max-width:991px) {
-	.candidate {
-		padding: 200px;
-	}
-}
-
-
-#contact {
-    width: 250px;
-    height: 250px;
-    margin: 0 auto;
-    text-align: center;
+.dts img {
+	float:left;
+	width: 300px;
+	height: 280px;
+	padding: 10px 10px 10px 10px;
+	border-radius: 28px;
+	border: 10px solid rgb(20, 19, 19);
 }

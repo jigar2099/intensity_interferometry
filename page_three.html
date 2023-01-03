@@ -9,202 +9,228 @@
 </head>
 <body>
 
-    <header class="candidate form" id="form">
+    
 
-        <nav class="navi">
-          <!--<a href="page_one.html#introduction" aria-label="Go to the top of the page">Introduction</a>
-          <a href="page_one.html#history" aria-label="Go to the history section">History</a>
-          <a href="page_one.html#experiments">Experiments</a>
-          <a href="page_one.html#instument-and-process">Instrument and procedure</a>
-          <a href="page_one.html#experiments">Experiments</a>
-          <a href="#dl_corr">Deep Learning</a>-->
-          <ul>
-              <li><a href="page_one.html#introduction">Interferometry +</a>
-                  <ul>
-                      <li><a href="page_one.html#introduction">Introduction</a>
-                      <li><a href="page_one.html#history">History</a></li>
-                      <li><a href="page_one.html#experiments">Experiments</a></li>
-                      <li><a href="page_one.html#instument-and-process">Instruments and procedure</a></li>
-                      <li><a href="page_one.html#experiments">Experiments</a></li>
-                  </ul>
-              </li>
-              
-              <li><a href="#dl_corr">Deep Learning +</a>
-                  <ul>
-                      <li><a href="#motivation2">Motivation</a></li>
-                      <li><a href="#ele_nn">Elements of NN</a></li>
-                      <li><a href="#nns">NN types +</a>
-                          <ul>
-                              <li><a href="#fully">FCNN</a></li>
-                              <li><a href="#cnn">CNN</a></li>
-                              <li><a href="#lstm">LSTM</a></li>
-                          </ul>
-                      </li>
-                      
-                  </ul>
-              </li>
-              <li><a href="#test">Test</a>
-              <li><a href="#contact">Contact</a>
-          </ul>
+  <header class="flux-calculation using-dl" id="using-dl">
+
+    <nav class="navigate-to other page">
+      
+      <ul>
+          <li><a href="page_one.html#introduction">Interferometry +</a>
+              <ul>
+                  <li><a href="page_one.html#introduction">Introduction</a>
+                  <li><a href="page_one.html#history">History</a></li>
+                  <li><a href="page_one.html#experiments">Experiments</a></li>
+                  <li><a href="page_one.html#instument-and-process">Instruments and procedure</a></li>
+                  <li><a href="page_one.html#experiments">Experiments</a></li>
+              </ul>
+          </li>
+          
+          <li><a href="#dl_corr">Deep Learning +</a>
+              <ul>
+                  <li><a href="page_two.html#motivation2">Motivation</a></li>
+                  <li><a href="page_two.html#ele_nn">Elements of NN</a></li>
+                  <li><a href="page_two.html#nns">NN types +</a>
+                      <ul>
+                          <li><a href="page_two.html#fully">FCNN</a></li>
+                          <li><a href="page_two.html#cnn">CNN</a></li>
+                          <li><a href="page_two.html#lstm">LSTM</a></li>
+                      </ul>
+                  </li>
+                  
+              </ul>
+          </li>
+          <li><a href="#test">Test</a>
+          <li><a href="#contact">Contact</a>
+      </ul>
+  </nav>
+</header>
+
+
   
-      </nav>
-  </header>
 
-
-  <form action="https://formdump.codeinstitute.net" method="POST">
-  <section id="test">
-    <h1>Test your knowledge</h1>
-    <fieldset>
+<section class="test_kn" id="test_kn">
+    
+    <form action="www.google.com" method="POST">
+        <section class="test" id="test">
+            <h1>Test your knowledge</h1>
+            <h2>Questionnair</h2>
+          <fieldset>
+              
+              <div>
+                  <label for="enroll_no">Enrollment number</label>
+                  <input id="enroll_no" type="text" name="enroll_no" placeholder="Enter your enrollment number" required>
+              </div>
+              <div>
+                  <label for="uni-email">Email</label>
+                  <input id="uni-email" type="email" name="uni-email" placeholder="Please enter your university email address" required>
+              </div>
+          
+                  <label for="age">Age</label>
+                  <select id="age" name="age" required>
+                      <option value="under-20">Under 20</option>
+                      <option value="20s">20-29</option>
+                      <option value="30s">30-39</option>
+                      <option value="40s">40-49</option>
+                      <option value="50s">50-59</option>
+                      <option value="60+">60+</option>
+                  </select>
+          
+                  <label for="department">Department</label>
+                  <select id="department" name="department" required>
+                      <option value="phy">Physics</option>
+                      <option value="chem">Chemistry</option>
+                      <option value="bio">Biology</option>
+                      <option value="math">Mathematics</option>
+                      <option value="comp">Computational Eng.</option>
+                      <option value="other">Other</option>
+                  </select>
+      
+                  <label for="institute">Institute</label>
+                  <select id="institute" name="institute" required>
+                      <option value="mpi">Max-Plank</option>
+                      <option value="fr">Fraunhofer</option>
+                      <option value="iaifi">IAIFI</option>
+                      <option value="ecap">ECAP</option>
+                      <option value="oth">Other</option>
+                  </select>
+            </fieldset>
+       
+          <fieldset>
+              <legend>Questionnair</legend>
+              <div>
+                  <label for="interferometry_q">Which interferometry is independent of atmospheric fluctuations?</label>
+                  <input id="interferometry_q" list="int_q" name="interferometry_q" required>
+                  <datalist id="int_q">
+                      <option value="Intensity Interferometry">
+                      <option value="Amplitude Interferometry">
+                      <option value="Other">
+                  </datalist>
+                  <br>
+                  <label for="other_reason">If other, then which one and please explain why?</label>
+                  <br>
+                  <textarea id="other_reason" rows="14" cols="87" name="other_reason"></textarea>
+              </div>
+      
+              <p>Diameter of which star was first measured as 5 arcsecond?</p>
+      
+              <input id="sirius" name="sirius" value="sirius" type="radio" required>
+              <label for="sirius">Sirius</label>
+      
+              <input id="casA" name="casA" value="casA" type="radio" required>
+              <label for="casA">Cassiopea A</label>
+      
+              <input id="arcux" name="arcux" value="arcux" type="radio" required>
+              <label for="arcux">Arcux</label>
+      
+      
+              <p>Which part of artificial neural network helps in weight update in backpropagation?</p>
+      
+              <input id="opt" name="opt" value="opt" type="radio" required>
+              <label for="opt">Optimizer</label>
+      
+              <input id="loss" name="loss" value="loss" type="radio" required>
+              <label for="loss">Loss function</label>
+      
+              <input id="act_fn" name="act_fn" value="act_fn" type="radio" required>
+              <label for="act_fn">Activation function</label>
+      
+      
+              <p>Which Neural Network is/are suitable for time series data?</p>
+              <div>
+                  <input type="checkbox" id="fcnn_NN" name="fcnn_NN">
+                  <label for="fcnn_NN">Fully Connected NN</label>
+              </div>
+              <div>
+                  <input type="checkbox" id="conv_nn" name="conv_nn">
+                  <label for="conv_nn">Convolutional NN</label>
+              </div>
+              <div>
+                  <input type="checkbox" id="lstm_nn" name="lstm">
+                  <label for="lstm_nn">LSTM network</label>
+              </div>
+              <div>
+                  <input type="checkbox" id="cnn_lstm" name="cnn_lstm">
+                  <label for="cnn_lstm">CNN and LSTM networks</label>
+              </div>	
+          </fieldset>
+      
+          <fieldset>
+              <legend>Feeback</legend>
+              <label for="feedback">Please provide feedback on examination.</label>
+              <br>
+              <textarea id="feedback" rows="9" cols="87" name="feedback"></textarea>
+          </fieldset>
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset Form">
+        </section>
         
-        <div>
-            <label for="enroll_no">Enrollment number</label>
-            <input id="enroll_no" type="text" name="enroll_no" placeholder="Enter your enrollment number" required>
+      </form>
+</section>
+
+
+
+
+
+
+  <section class="contact" id="contact">
+    <div class="container1">
+        <div class="content">
+          <div class="le_sd">
+
+            <div class="address dts">
+              <img src="/css/Profile_pic.png" alt="">
+              <p>I am a physicist, data analyst and data scientist and full-stack developer with keen interest in asstophysics as well as artificial intelligence. Googling is one of my favourite activity. I like classical rock music.</p>
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="text-one">Waaaer-Mexxey str. 28, Nürnberg, 9xx78</div>
+              <div class="text-two"></div>
+            </div>
+
+            <div class="phone dts">
+              <i class="fas fa-phone-alt"></i>
+              <div class="text-one">+49 999 xxx xxxxx</div>
+            </div>
+
+            <div class="email dts">
+                <i class="fas fa-envelope"></i>
+                <div class="text-one">jigarbhanderi@gmail.com</div>
+            </div>
+
+          </div>
+
+          <div class="rg_sd">
+            <h1>Send a message..</h1>
+            <p>If you have any concept related, subject, administrative, technical, current-project related, or volunteer project related question please select option below and send your query to me.</p>
+            <label for="que_typ">Topic:</label>
+                  <select id="que_typ" name="que_typ" required>
+                      <option value="cpt">Concept</option>
+                      <option value="sbj">Subject</option>
+                      <option value="adm">Administration</option>
+                      <option value="tecfh">Technical</option>
+                      <option value="Curr_proj">Other</option>
+                      <option value="vol_proj">Looking for project</option>
+                  </select>
+          <form action="#">
+            <div class="inp_bx">
+              <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="inp_bx">
+              <input type="text" placeholder="Enter your email">
+            </div>
+            <div class="inp_bx msg_bx">
+                <textarea id="feedback" rows="9" cols="87" name="feedback"></textarea>
+            </div>
+            <div class="btn">
+              <input type="button" value="Send Now" >
+            </div>
+          </form>
+         </div>
+
         </div>
-        <div>
-            <label for="uni-email">Email</label>
-            <input id="uni-email" type="email" name="uni-email" placeholder="Please enter your university email address" required>
-        </div>
-    
-        <label for="age">Age</label>
-            <select id="age" name="age" required>
-                <option value="under-20">Under 20</option>
-                <option value="20s">20-29</option>
-                <option value="30s">30-39</option>
-                <option value="40s">40-49</option>
-                <option value="50s">50-59</option>
-                <option value="60+">60+</option>
-            </select>
-    
-            <label for="department">Department</label>
-            <select id="department" name="department" required>
-                <option value="phy">Physics</option>
-                <option value="chem">Chemistry</option>
-                <option value="bio">Biology</option>
-                <option value="math">Mathematics</option>
-                <option value="comp">Computational Eng.</option>
-                <option value="other">Other</option>
-            </select>
-
-            <label for="institute">Institute</label>
-            <select id="institute" name="institute" required>
-                <option value="mpi">Max-Plank</option>
-                <option value="fr">Fraunhofer</option>
-                <option value="iaifi">IAIFI</option>
-                <option value="ecap">ECAP</option>
-                <option value="oth">Other</option>
-            </select>
-      </fieldset>
- 
-    <fieldset>
-        <legend>Questionnair</legend>
-        <div>
-            <label for="interferometry_q">Which interferometry is independent of atmospheric fluctuations?</label>
-            <input id="interferometry_q" list="int_q" name="interferometry_q" required>
-            <datalist id="int_q">
-                <option value="Intensity Interferometry">
-                <option value="Amplitude Interferometry">
-                <option value="Other">
-            </datalist>
-            <br>
-            <label for="other_reason">If other, then which one and please explain why?</label>
-            <br>
-            <textarea id="other_reason" rows="14" cols="87" name="other_reason"></textarea>
-        </div>
-
-        <p>Diameter of which star was first measured as 5 arcsecond?</p>
-
-        <input id="sirius" name="sirius" value="sirius" type="radio" required>
-        <label for="sirius">Sirius</label>
-
-        <input id="casA" name="casA" value="casA" type="radio" required>
-        <label for="casA">Cassiopea A</label>
-
-        <input id="arcux" name="arcux" value="arcux" type="radio" required>
-        <label for="arcux">Arcux</label>
 
 
-        <p>Which part of artificial neural network helps in weight update in backpropagation?</p>
 
-        <input id="opt" name="opt" value="opt" type="radio" required>
-        <label for="opt">Optimizer</label>
-
-        <input id="loss" name="loss" value="loss" type="radio" required>
-        <label for="loss">Loss function</label>
-
-        <input id="act_fn" name="act_fn" value="act_fn" type="radio" required>
-        <label for="act_fn">Activation function</label>
-
-
-        <p>Which Neural Network is/are suitable for time series data?</p>
-        <div>
-            <input type="checkbox" id="fcnn_NN" name="fcnn_NN">
-            <label for="fcnn_NN">Fully Connected NN</label>
-        </div>
-        <div>
-            <input type="checkbox" id="conv_nn" name="conv_nn">
-            <label for="conv_nn">Convolutional NN</label>
-        </div>
-        <div>
-            <input type="checkbox" id="lstm_nn" name="lstm">
-            <label for="lstm_nn">LSTM network</label>
-        </div>
-        <div>
-            <input type="checkbox" id="cnn_lstm" name="cnn_lstm">
-            <label for="cnn_lstm">CNN and LSTM networks</label>
-        </div>	
-    </fieldset>
-
-    <fieldset>
-        <legend>Feeback</legend>
-        <label for="feedback">Please provide feedback on examination.</label>
-        <br>
-        <textarea id="feedback" rows="9" cols="87" name="feedback"></textarea>
-    </fieldset>
-  </section>
-  <input type="submit" value="Submit">
-  <input type="reset" value="Reset Form">
-</form>
-
-
-<section id="contact">
-    <h2>Contact</h2>
-	<div class="contact-box-left">
-		<h3 class="text-center">Open times</h3>
-
-		<table class="text-center">
-		<tr>
-			<th></th>
-			<th>Open</th>
-			<th>Close</th>	
-		</tr>
-		<tr>
-			<td>Mon - Fri</td>
-			<td>09:00</td>
-			<td>21:00</td>
-		</tr>
-		<tr>
-			<td>Weekend</td>
-			<td>10:00</td>
-			<td>22:00</td>
-		</tr>	
-		</table>
-	</div>
-	<div class="text-center contact-box-right">
-		<h3>Get in touch</h3>
-
-		<div>
-		<span class="bold">Phone: </span>
-		<span>+49 176 288 50202</span>
-		</div>
-		<div>
-		<span class="bold">Email: </span>
-		<span>jigar.bhanderi@gmail.com</span>
-		</div>
-	</div>
-	<div class="contact-box-center">
-		<h3>Address</h3>
-		<p>Walter-Meckauer str,<br>26 Nürnberg,<br>Germany</p>
-	</div>
+    </div>
   </section>
   
     
