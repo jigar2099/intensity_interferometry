@@ -1,108 +1,34 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Intensity Interferometry web applicaiton
 
-Welcome jigar bhanderi,
+This web application development project is a part of the course requirement of full-stack deelopment. The project is aimed to provide information about research done in a specific field in detail. It includes conceptual __introduction__ and __motivation__ behind the project.
+![alt text](css/img-1.png)
+The project delivers additional informnation such as __historical development__ in intensity interferometry and _general information about neural networks_. Further, user can also get to know about different type of experiments(telescopes) actively used for research in interferometry, and __instruments__ and __procedure__ for intensity interferometry.
+In the first page website of Erlangen Center for Astorparticlephysics is embedded, where I have performed experiments. ON the second page the link to a lecture by Prof. Alain Aspekt on Hanbury-Brown-Twiss intensity interferometry is embedded.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+| Intensity Interferometry | Neural Networks |
+| --- | --- |
+| ![alt text](css/img-1.png) | ![alt text](css/img-2.png) |
+|<table><tr><td>![alt text](css/img-4.png)</td>  <td>![alt text](css/img-3.png)</td></tr></table> | ![alt text](css/img-5.png) |
+| ![alt text](css/img-7.png) | ![alt text](css/img-8.png) |
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+On the second page elements of artificial neural networks are presented. An explanation of the optimizer, loss function, and neural network is also provided. Further, different neural network types are also explained.
+- Fully connected Neural Network (FCNN)
+- Convolutional Neural Network (CNN)
+- Long-Short Term Memory (LSTM)
 
-## Gitpod Reminders
+ON the third page __Questaionair__ is created for students to answer, which are directly submitted to the record of specific students.
+This form includes some compulsory fields. It also allows students to mention their connection with specific university, department, research center and field of study. At the end of the form students are asked to enter their feedback regarding examination.
+![alt text](css/img-6.png)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+In the last section information about web applicaiton creator is mentioned and asked is user has some query related to provided topics. In the footer, all the information references are mentioned.
+![alt text](css/img-9.png)
 
-`python3 -m http.server`
+## Referred Sources
+1. Flux calculation from PMT using deep learning
+2. Full-stack development by Code Institute
+3. Cherenkov Telescope Array(CTA)
+4. https://www.codinglabweb.com/2021/04/contact-us-form-in-html-and-css-free.html
+5. https://www.w3schools.com/tags/att_select_required.asp
+6. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article
+7. https://www.youtube.com/watch?v=5Uz33vo4GoQ&ab_channel=DevLangford
 
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
